@@ -70,8 +70,37 @@ a{
     bottom: 50%;
 }
 
-.card, .card-img > img {
+.card, .card-img > img, .hover-img-box {
     border-radius: 20px;
+}
+
+.card-img {
+    position: relative;
+}
+
+.hover-img-box {
+    cursor: pointer;
+    position: absolute;
+    height: 309px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: hsla(178, 100%, 50%, 0.411);
+}
+
+.card-img:hover .hover-img-box{
+    opacity: 1;
+}
+
+.hover-img {
+    content: url(images/icon-view.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .card ul {
