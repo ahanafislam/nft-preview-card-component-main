@@ -1,0 +1,128 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+/* Custom Properties */
+:root{
+    /*========
+      Colors
+    ==========*/
+    /* Primary */
+
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* General Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-bg);
+    color: var(--soft-blue);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h3 {
+    color: var(--white);
+    font-weight: 600;
+    margin: 25px 0;
+}
+
+a{
+    color: var(--white);
+}
+
+/* Card Style */
+
+.card {
+    background-color: var(--card-bg);
+    max-width: 350px;
+    padding: 1.25rem;
+    line-height: 24px;
+    top: 50%;
+    bottom: 50%;
+}
+
+.card, .card-img > img {
+    border-radius: 20px;
+}
+
+.card ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.card ul li:first-child{
+    color: var(--cyan);
+    font-weight: 400;
+}
+
+.card ul li:first-child::before{
+    content: url(images/icon-ethereum.svg);
+    margin-right: 7px;
+    vertical-align: -9%;
+}
+
+.card ul li:last-child::before{
+    content: url(images/icon-clock.svg);
+    margin-right: 7px;
+    vertical-align: -9%;
+}
+
+hr {
+    border: 1px solid var(--line);
+    margin: 30px 0;
+}
+
+.avater{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.avater img{
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--white);
+    border-radius: 15px;
+}
+
+.creator{
+    color: var(--white);
+}
+
+h3:hover, .creator:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
