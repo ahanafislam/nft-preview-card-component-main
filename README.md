@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution Code Link](https://github.com/ahanafislam/order-summary-component-main)
-- [Live Site Link](https://ahanafislam.github.io/order-summary-component-main/)
+- [Solution Code Link](https://github.com/ahanafislam/nft-preview-card-component-main)
+- [Live Site Link](https://ahanafislam.github.io/nft-preview-card-component-main/)
 
 ## My process
 
